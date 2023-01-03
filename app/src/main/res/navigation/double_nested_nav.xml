@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/double_nested_navigation"
+    app:startDestination="@+id/double_nested_fragment">
+
+    <fragment
+        android:id="@+id/double_nested_fragment"
+        android:name="com.example.nav_experiments.ui.doublenested.DoubleNestedFragment"
+        android:label="double_NESTED" />
+
+</navigation>

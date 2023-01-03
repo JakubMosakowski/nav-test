@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nested_navigation"
+    app:startDestination="@+id/nested_fragment">
+
+    <fragment
+        android:id="@+id/nested_fragment"
+        android:name="com.example.nav_experiments.ui.nested.NestedFragment"
+        android:label="NESTED"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/navigateToDoubleNestedNavigation"
+            app:destination="@id/double_nested_navigation" />
+
+    </fragment>
+
+</navigation>
